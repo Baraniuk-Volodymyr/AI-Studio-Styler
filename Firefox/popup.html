@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { width: 250px; font-family: sans-serif; padding: 10px; }
+        .container { text-align: center; }
+        #statusText { font-weight: bold; height: 20px; }
+        #toggleButton { width: 90%; padding: 10px; font-size: 14px; border: none; border-radius: 5px; cursor: pointer; background-color: #4CAF50; color: white; transition: background-color 0.2s; }
+        #toggleButton:hover { background-color: #45a049; }
+        #toggleButton.disabled { background-color: #f44336; }
+        #toggleButton.disabled:hover { background-color: #da190b; }
+
+        details { margin-top: 15px; border: 1px solid #ccc; border-radius: 5px; }
+        summary { padding: 10px; cursor: pointer; font-weight: bold; background-color: #f1f1f1; }
+        .settings-grid { padding: 10px; }
+        .setting { display: grid; grid-template-columns: 1fr 1fr; align-items: center; margin-bottom: 8px; }
+        label { text-align: left; font-size: 13px; }
+        select { width: 100%; padding: 5px; }
+
+        /* ADDED: Styles for the new reset button */
+        #resetButton {
+            grid-column: 1 / -1; /* Make button span both columns */
+            margin-top: 10px;
+            background-color: #607d8b;
+            color: white;
+            border: none;
+            padding: 8px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #resetButton:hover { background-color: #546e7a; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>AI Studio Styler</h3>
+        <p id="statusText">Status: Unknown</p>
+        <button id="toggleButton">Enable Styles</button>
+
+        <details id="advancedSettingsContainer">
+            <summary>Advanced Settings</summary>
+            <div class="settings-grid">
+                <div class="setting">
+                    <label for="mainDirection">Main Direction:</label>
+                    <select id="mainDirection">
+                        <option value="rtl">RTL</option>
+                        <option value="ltr">LTR</option>
+                    </select>
+                </div>
+                <div class="setting">
+                    <label for="codeDirection">Code Direction:</label>
+                    <select id="codeDirection">
+                        <option value="ltr">LTR</option>
+                        <option value="rtl">RTL</option>
+                    </select>
+                </div>
+                <div class="setting">
+                    <label for="codeAlign">Code Text Align:</label>
+                    <select id="codeAlign">
+                        <option value="left">Left</option>
+                        <option value="right">Right</option>
+                        <option value="center">Center</option>
+                    </select>
+                </div>
+                <div class="setting">
+                    <label for="headerDirection">Header Direction:</label>
+                    <select id="headerDirection">
+                        <option value="ltr">LTR</option>
+                        <option value="rtl">RTL</option>
+                    </select>
+                </div>
+                <!-- ADDED: The reset button itself -->
+                <button id="resetButton">Reset to Defaults</button>
+            </div>
+        </details>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
