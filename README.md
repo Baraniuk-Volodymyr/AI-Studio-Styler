@@ -40,7 +40,7 @@ __Have a question?__ Please, do not hesitate to contact us at https://instagr.am
 
 ### Bugs (mandatory):
 
-- [ ] B1. Bug: status filter button displays on top of the calendar view when selecting task due date
+- [ ] B1. Bug: status filter button displays on top of the calendar view when selecting due date of a task
 - [ ] B2. Bug: the app crashes after adding a new todo
 
 ### Tasks (optional):
